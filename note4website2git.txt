@@ -1,0 +1,71 @@
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+…or create a new repository on the command line
+
+
+
+echo "# files for rps.play of website" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:shaofengchang25-blip/rps.play.git
+git push -u origin main
+git push -u origin main
+
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:shaofengchang25-blip/rps.git
+git branch -M main
+git push -u origin main
+---
+git commit -m "add two html files"
+Git pull
+Git push git@github.com:shaofengchang25-blip/rps.git
+-----
+From gemini:
+
+# Initialize a new git repository for the website only
+git init
+
+# Add your files
+git add index.html privacy.html
+
+# Commit the files
+git commit -m "Initial website deployment"
+
+# Connect to your new GitHub repository
+# (Make sure you created the repo 'rpsgame' on GitHub first)
+git remote add origin https://github.com/shaofengchang25-blip/rps.play.git
+
+# Push the files to GitHub
+# Note: You might need to use 'master' instead of 'main' 
+# depending on your default settings.
+git branch -M main
+git push -u origin main
+
+My Account git@github.com:myname instead of github.com/myname, git push https://github.com/myname/rps ask name and password, is it the same?
+
+Git push https://github.com/shaofengchang25-blip/rps.play.git
+
+# Change the remote from HTTPS to SSH
+git remote set-url origin git@github.com:shaofengchang25-blip/rps.play.git
+
+git push -u origin main
+Index.html and others are under https://github.com/myname/rps.play/tree/main in git, the address
+https://myname.github.io/rps.play still 404 error
+
+
+----after rename---as aropas-play
+# Update the address book
+git remote set-url origin git@github.com:aropas-play/rps.play.git
+
+# Push your changes (Git now knows where 'origin' is)
+git push -u origin main
+------------
+https://shaofengchang25-blip.github.io/rps.play
+
+
+https://aropas-play.github.io/rps.play still 404 error
+
+
