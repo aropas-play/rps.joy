@@ -68,4 +68,8 @@ https://shaofengchang25-blip.github.io/rps.play
 
 https://aropas-play.github.io/rps.play still 404 error
 
-
+Q:
+1. in index.html, added "(Aropas)" now, to make "A modern active Rock-Paper-Scissors (Aropas) ... " allready
+2. put a link to (Aropas) so that it is clickable jump to a new page aropas-intro.html
+3. in that page, make a title and many paragrphes, each paragraph put a web link and picture local link, pictures are under subfolder of this folder
+4. create a pattern, in which contents will be filled
