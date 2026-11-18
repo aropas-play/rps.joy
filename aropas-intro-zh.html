@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aropas 介绍 - RPSgame</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            padding: 40px 20px;
+            background: #f4f4f9;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #1976D2;
+            margin: 0 0 10px 0;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        a {
+            color: #1976D2;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #1565C0;
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .lang-switch {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .lang-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            font-size: 0.85em;
+            color: #555;
+            background: #f0f0f0;
+            border-radius: 4px;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: #1976D2;
+            color: #fff;
+            border-color: #1976D2;
+            text-decoration: none;
+        }
+        .nav-back {
+            display: flex;
+            justify-content: flex-end;
+            margin: 15px 0;
+        }
+        .intro-section {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .intro-section h2 {
+            color: #1976D2;
+            margin-top: 0;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+        .web-link {
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .media-container {
+            margin-top: 15px;
+            text-align: center;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px dashed #ccc;
+        }
+        .media-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        /* 弹性并行图片网格 */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .image-grid .media-card {
+            flex: 1 1 120px;
+            min-width: 110px;
+            background: #fafafa;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px dashed #ccc;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .image-grid .media-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 6px;
+        }
+        /* 姿势分类 5 列固定网格 */
+        .image-grid-5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .image-grid-5 .media-card {
+            background: #fafafa;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px dashed #ccc;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .image-grid-5 .media-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 6px;
+        }
+        .category-block {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px dashed #e0e0e0;
+        }
+        .category-block h3 {
+            color: #1976D2;
+            margin: 0 0 4px 0;
+            font-size: 1.1em;
+        }
+        .category-comment {
+            color: #777;
+            font-style: italic;
+            font-size: 0.9em;
+            margin: 0 0 10px 0;
+        }
+        .local-pic-link {
+            display: block;
+            font-size: 0.82em;
+            color: #555;
+            margin-top: 4px;
+            word-break: break-word;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1976D2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #1565C0;
+            color: white;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aropas</h1>
+    </header>
+
+    <!-- 顶部导航与语言切换器 -->
+    <div class="top-nav">
+        <div class="lang-switch">
+            <a href="aropas-intro.html" class="lang-btn" title="English">🇬🇧 EN</a>
+            <a href="aropas-intro-zh.html" class="lang-btn active" title="中文">🇨🇳 中文</a>
+            <a href="aropas-intro-de.html" class="lang-btn" title="Deutsch">🇩🇪 DE</a>
+        </div>
+        <a href="index-zh.html" class="btn">返回首页 &rarr;</a>
+    </div>
+
+    <main>
+
+        <!-- 第 1 节 -->
+        <section class="intro-section">
+            <h2>1. 简介</h2>
+            <p>
+                Aropas（Active Rock-Paper-Scissors，动态石头-剪刀-布）是一款注入了全身运动活力的传统石头-剪刀-布游戏。你不仅可以用手势玩，还可以用全身动作参与。通过肢体摆出“石头”、“剪刀”、“布”的姿势，你能全面舒展手臂、腿部与躯干的肌肉和关节，而手部动作也有助于放松手指与手腕。
+            </p>
+            <p>
+                这使得 Aropas 成为打破长时间久坐的绝佳方式，无论你是在电脑前工作还是看手机。玩游戏时，只需将手机平放并在屏幕上方做手势，或者将手机垂直立起、退后至摄像头视野内与 AI 进行姿势对决。输赢并不重要，真正的胜利是让你的身体动起来、充分拉伸，从屏幕前得到适时放松。
+            </p>
+            <p>
+                肢体石头-剪刀-布的玩法与大众熟知的传统手势石头-剪刀-布完全一致。网络上有许多体现其流行度的现实案例。例如，运动与体育教育学专家 <a href="https://www.fhsmp.de/hochschule-profil/unser-team/prof-dr-christian-andrae-2/" target="_blank">Prof. Dr. Christian Andrä</a> 在其 YouTube 频道上与学生示范了<a href="https://www.youtube.com/shorts/SBpPGiYZ1q8?feature=share" target="_blank">肢体石头-剪刀-布</a>，展示了其对老少皆宜的健康健身益处。
+            </p>
+
+            <!-- 4 图并行展示网格 -->
+            <p style="font-size:0.9em; color:#666; margin-bottom:8px;">
+                石头、剪刀、布的肢体姿势见于 <a href="https://www.youtube.com/shorts/SBpPGiYZ1q8?feature=share" target="_blank">YouTube 示范视频</a>，如下所示：
+            </p>
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/ProfStu_rock.png" alt="肢体石头姿势">
+                    <span class="local-pic-link">肢体石头姿势</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/ProfStu_paper.png" alt="肢体布姿势">
+                    <span class="local-pic-link">肢体布姿势</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/ProfStu_scissors.png" alt="肢体剪刀姿势">
+                    <span class="local-pic-link">肢体剪刀姿势</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/ProfStu_together.png" alt="双人对决">
+                    <span class="local-pic-link">双人对决</span>
+                </div>
+            </div>
+
+            <p>
+                传统上，手势/肢体石头-剪刀-布需要一位同伴站在你面前。为了打破这一限制，Aropas 结合了智能手机与人工智能（AI）技术。你的手机利用摄像头实时识别你的手势与身体姿势，充当你的互动对手，让你一个人也能完整体验胜、负、平局的石头-剪刀-布乐趣。
+            </p>
+            <p>
+                此外，现代工作与日常习惯常常让我们长时间保持静态姿势面对屏幕，容易引发身体不适与健康隐患。Aropas 为久坐屏幕前提供了理想的运动间隙，帮助你重塑健康生活节奏。只需离开设备片刻，你就能主动拉伸、活动全身，舒缓肌肉与关节压力。
+            </p>
+
+        </section>
+
+        <!-- 第 2 节 -->
+        <section class="intro-section">
+            <h2>2. Aropas 游戏功能</h2>
+            <p>
+                游戏包含四大主要页面——自动玩 (Auto Play)、主动玩 (Active Play)、主动身体玩 (Active Body Play) 以及通用设置 (General Settings)，你可以通过顶部栏的箭头指示轻松切换：
+            </p>
+            <p>
+                • Auto Play（自动玩）：观赏两位玩家在你的手机上直接决斗。根据你的喜好，选择全自动或半自动模式，点击一次或多次开始按钮。
+            </p>
+
+            <!-- Auto Play 4 图并行截图 -->
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay1.jpg" alt="点击 Play 按钮后的对局">
+                    <span class="local-pic-link">点击“Play”按钮后的对决，黄色表示该局为平局（1st play, R1）</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay2.jpg" alt="点击 Play 按钮后的对局">
+                    <span class="local-pic-link">点击“Play”按钮后的对决，红色/绿色表示第 2 局的输/赢（R2）</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay3.jpg" alt="本轮最终结果">
+                    <span class="local-pic-link">本轮最终结果，黄色表示整轮最终平局（带文字重叠显示）</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay4.jpg" alt="点击 check 后的查看界面">
+                    <span class="local-pic-link">点击“Check”后的查看界面，此处为第 3 局（R3），同时记录了 R1、R2，点击左右箭头即可浏览</span>
+                </div>
+            </div>
+
+            <p>
+                • Active Play（主动玩）：与你的手机一决高下！在此模式下，手机为玩家 1，你是玩家 2。你可以选择点击屏幕上的猜拳图标，或者直接向开启的摄像头展示真实的手势。
+            </p>
+
+            <!-- Active Play 5 图并行截图 -->
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay1.png" alt="主动猜拳 截图 1">
+                    <span class="local-pic-link">做出“OK”手势，看到1，听到声，开始本局，每轮 3 局均如此开局，或点击play键开局</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay2.png" alt="主动猜拳 截图 2">
+                    <span class="local-pic-link">做出“OK”手势被识别后，进行本轮第 1 局对决</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay3.png" alt="主动猜拳 截图 3">
+                    <span class="local-pic-link">做出“OK”手势被识别后，进行本轮第 2 局对决</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay4.png" alt="主动猜拳 截图 4">
+                    <span class="local-pic-link">做出“OK”手势被识别后，进行本轮第 3 局对决</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay5.png" alt="主动猜拳 截图 5">
+                    <span class="local-pic-link">恭喜你！你赢得了本轮胜利</span>
+                </div>
+            </div>
+
+            <p>
+                • Active Body Play（主动身体玩）：全身参与的对决挑战！你可以选择点击姿势图标，或者退后一步在手机摄像头前摆出真实的身体姿姿。
+            </p>
+
+            <!-- Active Body Play 5 图并行截图 -->
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody1.png" alt="主动身体猜拳 截图 1">
+                    <span class="local-pic-link">将一只手举过头顶，看到1，听到声，开始对决，每轮 3 局均如此开局，或点击play键</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody2.png" alt="主动身体猜拳 截图 2">
+                    <span class="local-pic-link">手举过头顶被识别后，进行本轮第 1 局对决</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody3.png" alt="主动身体猜拳 截图 3">
+                    <span class="local-pic-link">手举过头顶被识别后，进行本轮第 2 局对决</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody4.png" alt="主动身体猜拳 截图 4">
+                    <span class="local-pic-link">手举过头顶被识别后，进行本轮第 3 局对决</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody5.png" alt="主动身体猜拳 截图 5">
+                    <span class="local-pic-link">恭喜！获胜</span>
+                </div>
+            </div>
+
+            <p>
+                运动强度：这三种模式的运动强度由轻到重——从简单的按钮点击到全身大幅度运动。你可以完全自由决定想要运动的强度！
+            </p>
+            <p>
+                • General Settings（通用设置）：在此页面中，你可以个性化定制游戏体验。设置玩家姓名、选择头像照片、挑选倒计时语音、选择你喜爱的胜利音乐，并根据喜好切换应用语言。
+            </p>
+
+        </section>
+
+        <!-- 第 3 节 -->
+        <section class="intro-section">
+            <h2>3. 可行的身体姿势</h2>
+            <p>
+                将互动石头-剪刀-布升华成全身运动！Aropas 支持全身姿势追踪，将动作转化为游戏指令，鼓励身体活动与趣味互动。以下是截至目前在离线测试中成功识别的各类身体姿势示例：
+            </p>
+
+            <!-- 类别 1: paper -->
+            <div class="category-block">
+                <h3>类别：布 (paper)</h3>
+                <p class="category-comment">这是一种放松姿势，站立并远离手机或工作台</p>
+                <div class="image-grid-5">
+                    <div class="media-card">
+                        <img src="images/postexamples/bodygraphs/pl_bodypaper.png" alt="布设定图形">
+                        <span class="local-pic-link">布设定图形</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/papers/test_pose_g.jpg" alt="布姿势 1">
+                        <span class="local-pic-link">布姿势 1</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/papers/test_pose_h.jpg" alt="布姿势 2">
+                        <span class="local-pic-link">布姿势 2</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/papers/test_pose_i.jpg" alt="布姿势 3">
+                        <span class="local-pic-link">布姿势 3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 类别 2: scissors -->
+            <div class="category-block">
+                <h3>类别：剪刀 (scissors)</h3>
+                <p class="category-comment">这并不是投降，而是伸展动作；根据中医养生理念，若提踵踮脚，健康效果更佳</p>
+                <div class="image-grid-5">
+                    <div class="media-card">
+                        <img src="images/postexamples/bodygraphs/pl_bodyscissor.png" alt="剪刀设定图形">
+                        <span class="local-pic-link">剪刀设定图形</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_j.jpg" alt="剪刀姿势 1">
+                        <span class="local-pic-link">剪刀姿势 1</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_11.jpg" alt="剪刀姿势 2">
+                        <span class="local-pic-link">剪刀姿势 2</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_12.jpg" alt="剪刀姿势 3">
+                        <span class="local-pic-link">剪刀姿势 3</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_13.jpg" alt="剪刀姿势 4">
+                        <span class="local-pic-link">剪刀姿势 4</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_14.jpg" alt="剪刀姿势 5">
+                        <span class="local-pic-link">剪刀姿势 5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 类别 3: rock -->
+            <div class="category-block">
+                <h3>类别：石头 (rock)</h3>
+                <p class="category-comment">这里的设定姿势是轻松下蹲，你可以根据自身能力选择姿势。请记住在看到“1”及语音倒计时结束后的 2 秒内完成动作，保持平衡并准备下一次。如果你选择像最后一排或最后一个高难度姿势，对你和 AI 识别算法来说都将是巨大的挑战！</p>
+                <div class="image-grid-5">
+                    <div class="media-card">
+                        <img src="images/postexamples/bodygraphs/pl_bodyrock.png" alt="石头设定图形">
+                        <span class="local-pic-link">石头设定图形</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_5.jpg" alt="石头姿势 1 上">
+                        <img src="images/postexamples/rock/test_pose_b.jpg" alt="石头姿势 2 下" style="margin-top: 4px;">
+                        <span class="local-pic-link">石头姿势 1, 2</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_9.jpg" alt="石头姿势 3">
+                        <span class="local-pic-link">石头姿势 3</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_a.jpg" alt="石头姿势 4">
+                        <span class="local-pic-link">石头姿势 4</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_6.jpg" alt="石头姿势 5">
+                        <span class="local-pic-link">石头姿势 5</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_16.jpg" alt="石头姿势 6">
+                        <span class="local-pic-link">石头姿势 6</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_17.jpg" alt="石头姿势 7">
+                        <span class="local-pic-link">石头姿势 7</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_18.jpg" alt="石头姿势 8">
+                        <span class="local-pic-link">石头姿势 8</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_41.jpg" alt="石头姿势 9">
+                        <span class="local-pic-link">石头姿势 9</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_15.jpg" alt="石头姿势 10">
+                        <span class="local-pic-link">石头姿势 10</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_c.jpg" alt="石头姿势 11">
+                        <span class="local-pic-link">石头姿势 11</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_d.jpg" alt="石头姿势 12">
+                        <span class="local-pic-link">石头姿势 12</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_e.jpg" alt="石头姿势 13">
+                        <span class="local-pic-link">石头姿势 13</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_f.jpg" alt="石头姿势 14">
+                        <span class="local-pic-link">石头姿势 14</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- 底部返回首页按钮 -->
+    <div class="nav-back">
+        <a href="index-zh.html" class="btn">返回首页 &rarr;</a>
+    </div>
+
+    <div class="footer">
+        <p>开发者：Shaofeng Chang</p>
+        <p>&copy; 2026 Aropas (act.joy.rps) <img src="images/app_icon.png" alt="App Icon" style="height: 1.2em; width: auto; vertical-align: middle; margin-left: 4px;"></p>
+    </div>
+
+</body>
+</html>

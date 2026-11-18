@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aropas Einführung - RPSgame</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            padding: 40px 20px;
+            background: #f4f4f9;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #1976D2;
+            margin: 0 0 10px 0;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        a {
+            color: #1976D2;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #1565C0;
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .lang-switch {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .lang-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            font-size: 0.85em;
+            color: #555;
+            background: #f0f0f0;
+            border-radius: 4px;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: #1976D2;
+            color: #fff;
+            border-color: #1976D2;
+            text-decoration: none;
+        }
+        .nav-back {
+            display: flex;
+            justify-content: flex-end;
+            margin: 15px 0;
+        }
+        .intro-section {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .intro-section h2 {
+            color: #1976D2;
+            margin-top: 0;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+        .web-link {
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .media-container {
+            margin-top: 15px;
+            text-align: center;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px dashed #ccc;
+        }
+        .media-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        /* Flexibles paralleles Bildergitter */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .image-grid .media-card {
+            flex: 1 1 120px;
+            min-width: 110px;
+            background: #fafafa;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px dashed #ccc;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .image-grid .media-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 6px;
+        }
+        /* Feste 5-Spalten-Raster für Haltungskategorien */
+        .image-grid-5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .image-grid-5 .media-card {
+            background: #fafafa;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px dashed #ccc;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .image-grid-5 .media-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 6px;
+        }
+        .category-block {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px dashed #e0e0e0;
+        }
+        .category-block h3 {
+            color: #1976D2;
+            margin: 0 0 4px 0;
+            font-size: 1.1em;
+        }
+        .category-comment {
+            color: #777;
+            font-style: italic;
+            font-size: 0.9em;
+            margin: 0 0 10px 0;
+        }
+        .local-pic-link {
+            display: block;
+            font-size: 0.82em;
+            color: #555;
+            margin-top: 4px;
+            word-break: break-word;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1976D2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #1565C0;
+            color: white;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aropas</h1>
+    </header>
+
+    <!-- Navigation oben mit Sprachauswahl und Button zur Startseite -->
+    <div class="top-nav">
+        <div class="lang-switch">
+            <a href="aropas-intro.html" class="lang-btn" title="English">🇬🇧 EN</a>
+            <a href="aropas-intro-zh.html" class="lang-btn" title="中文">🇨🇳 中文</a>
+            <a href="aropas-intro-de.html" class="lang-btn active" title="Deutsch">🇩🇪 DE</a>
+        </div>
+        <a href="index-de.html" class="btn">Zurück zur Startseite &rarr;</a>
+    </div>
+
+    <main>
+
+        <!-- Abschnitt 1 -->
+        <section class="intro-section">
+            <h2>1. Einführung</h2>
+            <p>
+                Aropas (Active Rock-Paper-Scissors) ist das traditionelle Schere-Stein-Papier-Spiel, neu erfunden mit einer dynamischen, körperlichen Note. Anstatt nur Ihre Finger zu benutzen, spielen Sie diese Version mit Ihrem gesamten Körper. Indem Sie verschiedene Ganzkörper-Posen für Stein, Papier oder Schere einnehmen, dehnen und beanspruchen Sie aktiv die Muskeln und Gelenke in Armen, Beinen und Rumpf, während Ihre Handbewegungen zur Entspannung von Fingern und Handgelenken beitragen.
+            </p>
+            <p>
+                Das macht Aropas zur perfekten Möglichkeit, langes Sitzen in fester Position zu unterbrechen – egal ob Sie am Computer arbeiten oder auf Ihr Smartphone schauen. Zum Spielen legen Sie Ihr Telefon einfach hin und machen Gesten über dem Bildschirm oder stellen Ihr Telefon vertikal auf, treten in das Sichtfeld der Kamera zurück und machen Ihre Posen gegen die KI. Gewinnen oder Verlieren spielt keine Rolle – der echte Sieg besteht darin, Ihren Körper zu bewegen, sich zu dehnen und eine wohlverdiente Pause vom Bildschirm einzulegen.
+            </p>
+            <p>
+                Körper-Schere-Stein-Papier wird genau wie die weltweit beliebte Hand-Variante gespielt. Zahlreiche Beispiele aus der Praxis sind im Internet zu finden. So hat beispielsweise <a href="https://www.fhsmp.de/hochschule-profil/unser-team/prof-dr-christian-andrae-2/" target="_blank">Prof. Dr. Christian Andrä</a>, Experte für Bewegungs- und Sportpädagogik, zusammen mit seinen Studierenden auf seinem YouTube-Kanal eine Version von <a href="https://www.youtube.com/shorts/SBpPGiYZ1q8?feature=share" target="_blank">Körper-Schere-Stein-Papier</a> demonstriert und deren gesundheitliche und fitnessfördernde Vorteile für Jung und Alt hervorgehoben.
+            </p>
+
+            <!-- Parallel-Raster für 4 Bilder -->
+            <p style="font-size:0.9em; color:#666; margin-bottom:8px;">
+                Die Posen für Stein, Papier, Schere stammen aus der <a href="https://www.youtube.com/shorts/SBpPGiYZ1q8?feature=share" target="_blank">YouTube-Demonstration</a> wie folgt:
+            </p>
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/ProfStu_rock.png" alt="Körper Stein-Pose">
+                    <span class="local-pic-link">Körper Stein-Pose</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/ProfStu_paper.png" alt="Körper Papier-Pose">
+                    <span class="local-pic-link">Körper Papier-Pose</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/ProfStu_scissors.png" alt="Körper Schere-Pose">
+                    <span class="local-pic-link">Körper Schere-Pose</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/ProfStu_together.png" alt="Spiel mit Partner">
+                    <span class="local-pic-link">Spiel mit Partner</span>
+                </div>
+            </div>
+
+            <p>
+                Traditionell erfordert Schere-Stein-Papier einen Partner direkt vor Ihnen. Um diese Einschränkung zu überwinden, nutzt Aropas moderne Technologie, insbesondere Ihr Smartphone und Künstliche Intelligenz (KI). Ihr Telefon fungiert als interaktiver Gegner, indem es über seine Kamera Ihre Live-Gesten und Körperhaltungen erkennt, sodass Sie das volle Gewinn-, Verlust- oder Unentschieden-Erlebnis ganz alleine genießen können.
+            </p>
+            <p>
+                Darüber hinaus führen moderne Arbeits- und Freizeitroutinen oft dazu, dass wir längere Zeit in statischer Haltung vor Bildschirmen verbringen, was häufig zu körperlichen Beschwerden führt. Aropas bietet die ideale aktive Pause vom bewegungsarmen Bildschirmalltag, um Ihr Wohlbefinden wieder ins Gleichgewicht zu bringen. Indem Sie sich nur für einen Moment von Ihrem Gerät entfernen, können Sie sich aktiv dehnen, bewegen und Spannungen im gesamten Körper lösen.
+            </p>
+
+        </section>
+
+        <!-- Abschnitt 2 -->
+        <section class="intro-section">
+            <h2>2. Funktionen von Aropas</h2>
+            <p>
+                Das Spiel verfügt über vier Hauptseiten – Auto Play, Active Play, Active Body Play und General Settings –, durch die Sie mit den Pfeilanzeigen in der oberen Leiste leicht navigieren können:
+            </p>
+            <p>
+                • Auto Play: Schauen Sie zu, wie zwei KI-Spieler direkt auf Ihrem Telefon gegeneinander antreten. Je nach Wunsch können Sie mit einem einzigen Klick oder mehreren Klicks auf die Wiedergabetaste den Vollautomatik- oder Halbautomatik-Modus wählen.
+            </p>
+
+            <!-- Auto Play Parallel-Screenshots -->
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay1.jpg" alt="Ein Spiel nach Klick auf Play">
+                    <span class="local-pic-link">Ein Spiel nach Klick auf 'Play', Gelb zeigt ein 'Unentschieden' für dieses Spiel an (1. Spiel, R1)</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay2.jpg" alt="Ein Spiel nach Klick auf Play">
+                    <span class="local-pic-link">Ein Spiel nach Klick auf 'Play', Rot / Grün zeigt 'Verloren'/'Gewonnen' für das 2. Spiel an (R2)</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay3.jpg" alt="Ergebnis dieser Runde">
+                    <span class="local-pic-link">Ergebnis dieser Runde, Gelb zeigt Unentschieden für die gesamte Runde mit überlagertem Text an</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay4.jpg" alt="Ansicht nach Klick auf check">
+                    <span class="local-pic-link">Ansicht nach Klick auf 'Check', hier ist das 3. Spiel (R3), R1 und R2 sind ebenfalls gespeichert, Klick auf Links/Rechts-Pfeile zum Durchsuchen</span>
+                </div>
+            </div>
+
+            <p>
+                • Active Play: Treten Sie gegen Ihr Telefon an! In diesem Modus ist Ihr Telefon Spieler 1 und Sie sind Spieler 2. Je nach gewähltem Modus können Sie entweder auf die Gestensymbole auf dem Bildschirm tippen oder Ihre echten Handgesten direkt der geöffneten Kamera zeigen.
+            </p>
+
+            <!-- Active Play Parallel-Screenshots -->
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay1.png" alt="Active Play Screenshot 1">
+                    <span class="local-pic-link">Klicken auf die Spieltaste, oder Machen Sie das OK-Zeichen, um eine Runde zu starten; führen Sie dies für jedes Spiel dieser Runde aus</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay2.png" alt="Active Play Screenshot 2">
+                    <span class="local-pic-link">Das 1. Spiel dieser Runde, nachdem das OK-Zeichen erkannt wurde</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay3.png" alt="Active Play Screenshot 3">
+                    <span class="local-pic-link">Das 2. Spiel dieser Runde, nachdem das OK-Zeichen erkannt wurde</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay4.png" alt="Active Play Screenshot 4">
+                    <span class="local-pic-link">Das 3. Spiel dieser Runde, nachdem das OK-Zeichen erkannt wurde</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay5.png" alt="Active Play Screenshot 5">
+                    <span class="local-pic-link">Herzlichen Glückwunsch! Sie haben gewonnen</span>
+                </div>
+            </div>
+
+            <p>
+                • Active Body Play: Sie gegen Ihr Telefon in einer Ganzkörper-Herausforderung! Wählen Sie, ob Sie durch Tippen auf die Haltungssymbole spielen oder zurücktreten möchten, um echte physische Posen vor der Kamera Ihres Telefons einzunehmen.
+            </p>
+
+            <!-- Active Body Play Parallel-Screenshots -->
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody1.png" alt="Active Body Play Screenshot 1">
+                    <span class="local-pic-link">Klicken auf die Spieltaste, weg von Deinem Handy, oder Halten Sie eine Hand über den Kopf (sichtbar und mit Ton), um ein Spiel zu starten</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody2.png" alt="Active Body Play Screenshot 2">
+                    <span class="local-pic-link">Das 1. Spiel dieser Runde, nachdem eine Hand über dem Kopf erkannt wurde</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody3.png" alt="Active Body Play Screenshot 3">
+                    <span class="local-pic-link">Das 2. Spiel dieser Runde, nachdem eine Hand über dem Kopf erkannt wurde</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody4.png" alt="Active Body Play Screenshot 4">
+                    <span class="local-pic-link">Das 3. Spiel dieser Runde, nachdem eine Hand über dem Kopf erkannt wurde</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody5.png" alt="Active Body Play Screenshot 5">
+                    <span class="local-pic-link">Herzlichen Glückwunsch! Gewonnen</span>
+                </div>
+            </div>
+
+            <p>
+                Passen Sie Ihr Training an: Die körperliche Intensität dieser drei Modi skaliert von leicht bis schwer – von einem einfachen Button-Klick bis hin zu Ganzkörper-Bewegungen. Sie entscheiden selbst, wie viel Sie sich bewegen möchten!
+            </p>
+            <p>
+                • General Settings (Allgemeine Einstellungen): In diesem Bereich können Sie Ihr Erlebnis individuell anpassen. Legen Sie Spielernamen fest, wählen Sie Profilfotos, wählen Sie Countdown-Stimmen, Ihre Lieblings-Siegesmusik und ändern Sie die App-Sprache nach Ihren Wünschen.
+            </p>
+
+        </section>
+
+        <!-- Abschnitt 3 -->
+        <section class="intro-section">
+            <h2>3. Mögliche Körperhaltungen</h2>
+            <p>
+                Erleben Sie aktives Gaming in voller Körperbewegung! Aropas unterstützt Ganzkörper-Haltungstracking, bei dem Bewegungen in Spielaktionen übersetzt werden, was zu körperlicher Aktivität und interaktivem Spiel anregt. Nachfolgend finden Sie Beispiele für Körperhaltungen nach Spielzug, die in bisherigen Offline-Tests erkannt wurden:
+            </p>
+
+            <!-- Kategorie 1: paper -->
+            <div class="category-block">
+                <h3>Kategorie: Papier (paper)</h3>
+                <p class="category-comment">Dies ist eine entspannte Haltung, stehend und mit Abstand zum Telefon oder Arbeitsplatz</p>
+                <div class="image-grid-5">
+                    <div class="media-card">
+                        <img src="images/postexamples/bodygraphs/pl_bodypaper.png" alt="Papier Muster">
+                        <span class="local-pic-link">Papier Muster</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/papers/test_pose_g.jpg" alt="Papier Haltung 1">
+                        <span class="local-pic-link">Papier Haltung 1</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/papers/test_pose_h.jpg" alt="Papier Haltung 2">
+                        <span class="local-pic-link">Papier Haltung 2</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/papers/test_pose_i.jpg" alt="Papier Haltung 3">
+                        <span class="local-pic-link">Papier Haltung 3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kategorie 2: scissors -->
+            <div class="category-block">
+                <h3>Kategorie: Schere (scissors)</h3>
+                <p class="category-comment">Sie ergeben sich nicht, sondern dehnen sich; wenn Sie die Fersen anheben und auf den Zehenspitzen stehen, werden nach TCM noch bessere gesundheitliche Effekte erzielt</p>
+                <div class="image-grid-5">
+                    <div class="media-card">
+                        <img src="images/postexamples/bodygraphs/pl_bodyscissor.png" alt="Schere Muster">
+                        <span class="local-pic-link">Schere Muster</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_j.jpg" alt="Schere Haltung 1">
+                        <span class="local-pic-link">Schere Haltung 1</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_11.jpg" alt="Schere Haltung 2">
+                        <span class="local-pic-link">Schere Haltung 2</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_12.jpg" alt="Schere Haltung 3">
+                        <span class="local-pic-link">Schere Haltung 3</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_13.jpg" alt="Schere Haltung 4">
+                        <span class="local-pic-link">Schere Haltung 4</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_14.jpg" alt="Schere Haltung 5">
+                        <span class="local-pic-link">Schere Haltung 5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kategorie 3: rock -->
+            <div class="category-block">
+                <h3>Kategorie: Stein (rock)</h3>
+                <p class="category-comment">Hier ist das Muster eine einfache Hocke; Sie können wählen, was Sie möchten und können. Denken Sie daran, innerhalb von 2 Sekunden nach Erscheinen der "1" und gesprochenem Countdown fertig zu werden, das Gleichgewicht zu halten und sich auf die nächste Pose vorzubereiten. Wenn Sie eine schwierige Pose wählen, ist dies eine echte Herausforderung für Sie und den KI-Erkennungsalgorithmus!</p>
+                <div class="image-grid-5">
+                    <div class="media-card">
+                        <img src="images/postexamples/bodygraphs/pl_bodyrock.png" alt="Stein Muster">
+                        <span class="local-pic-link">Stein Muster</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_5.jpg" alt="Stein Haltung 1 oben">
+                        <img src="images/postexamples/rock/test_pose_b.jpg" alt="Stein Haltung 2 unten" style="margin-top: 4px;">
+                        <span class="local-pic-link">Stein Haltung 1, 2</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_9.jpg" alt="Stein Haltung 3">
+                        <span class="local-pic-link">Stein Haltung 3</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_a.jpg" alt="Stein Haltung 4">
+                        <span class="local-pic-link">Stein Haltung 4</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_6.jpg" alt="Stein Haltung 5">
+                        <span class="local-pic-link">Stein Haltung 5</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_16.jpg" alt="Stein Haltung 6">
+                        <span class="local-pic-link">Stein Haltung 6</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_17.jpg" alt="Stein Haltung 7">
+                        <span class="local-pic-link">Stein Haltung 7</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_18.jpg" alt="Stein Haltung 8">
+                        <span class="local-pic-link">Stein Haltung 8</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_41.jpg" alt="Stein Haltung 9">
+                        <span class="local-pic-link">Stein Haltung 9</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_15.jpg" alt="Stein Haltung 10">
+                        <span class="local-pic-link">Stein Haltung 10</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_c.jpg" alt="Stein Haltung 11">
+                        <span class="local-pic-link">Stein Haltung 11</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_d.jpg" alt="Stein Haltung 12">
+                        <span class="local-pic-link">Stein Haltung 12</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_e.jpg" alt="Stein Haltung 13">
+                        <span class="local-pic-link">Stein Haltung 13</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_f.jpg" alt="Stein Haltung 14">
+                        <span class="local-pic-link">Stein Haltung 14</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Button zur Startseite unten -->
+    <div class="nav-back">
+        <a href="index-de.html" class="btn">Zurück zur Startseite &rarr;</a>
+    </div>
+
+    <div class="footer">
+        <p>Entwickler: Shaofeng Chang</p>
+        <p>&copy; 2026 Aropas (act.joy.rps) <img src="images/app_icon.png" alt="App Icon" style="height: 1.2em; width: auto; vertical-align: middle; margin-left: 4px;"></p>
+    </div>
+
+</body>
+</html>

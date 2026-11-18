@@ -17,7 +17,7 @@
             padding: 40px 20px;
             background: #f4f4f9;
             border-radius: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             text-align: center;
         }
         h1 {
@@ -34,6 +34,43 @@
         }
         a:hover {
             color: #1565C0;
+        }
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .lang-switch {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .lang-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            font-size: 0.85em;
+            color: #555;
+            background: #f0f0f0;
+            border-radius: 4px;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: #1976D2;
+            color: #fff;
+            border-color: #1976D2;
+            text-decoration: none;
+        }
+        .nav-back {
+            display: flex;
+            justify-content: flex-end;
+            margin: 15px 0;
         }
         .intro-section {
             background: #ffffff;
@@ -69,15 +106,76 @@
             margin-bottom: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
+        /* Flexible Parallel Image Grid */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .image-grid .media-card {
+            flex: 1 1 120px;
+            min-width: 110px;
+            background: #fafafa;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px dashed #ccc;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .image-grid .media-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 6px;
+        }
+        /* 5-Column Fixed Grid for Posture Categories (Consistent Scaling across Rows) */
+        .image-grid-5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .image-grid-5 .media-card {
+            background: #fafafa;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px dashed #ccc;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .image-grid-5 .media-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 6px;
+        }
+        .category-block {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px dashed #e0e0e0;
+        }
+        .category-block h3 {
+            color: #1976D2;
+            margin: 0 0 4px 0;
+            font-size: 1.1em;
+        }
+        .category-comment {
+            color: #777;
+            font-style: italic;
+            font-size: 0.9em;
+            margin: 0 0 10px 0;
+        }
         .local-pic-link {
             display: block;
-            font-size: 0.9em;
+            font-size: 0.82em;
             color: #555;
-            margin-top: 5px;
-        }
-        .nav-back {
-            margin-top: 40px;
-            text-align: center;
+            margin-top: 4px;
+            word-break: break-word;
         }
         .btn {
             display: inline-block;
@@ -105,9 +203,20 @@
 <body>
 
     <header>
-        <h1>Aropas Introduction</h1>
-        <p class="subtitle">Learn more about modern active Rock-Paper-Scissors (Aropas) AI technology and gameplay.</p>
+        <h1>Aropas</h1>
+        <!-- <p class="subtitle">Learn more about modern active Rock-Paper-Scissors (Aropas) AI technology and gameplay.</p>
+        -->
     </header>
+
+    <!-- Top Nav with Language Switcher and Back to Home Button -->
+    <div class="top-nav">
+        <div class="lang-switch">
+            <a href="aropas-intro.html" class="lang-btn active" title="English">🇬🇧 EN</a>
+            <a href="aropas-intro-zh.html" class="lang-btn" title="中文">🇨🇳 中文</a>
+            <a href="aropas-intro-de.html" class="lang-btn" title="Deutsch">🇩🇪 DE</a>
+        </div>
+        <a href="index.html" class="btn">Back to Home &rarr;</a>
+    </div>
 
     <main>
         <!-- ================================================================= -->
@@ -116,59 +225,273 @@
 
         <!-- Section 1 -->
         <section class="intro-section">
-            <h2>1. Overview & Concept</h2>
+            <h2>1. Introduction</h2>
             <p>
-                Aropas brings active physical interaction to the classic Rock-Paper-Scissors game by using real-time AI computer vision models. Players can participate using hand gestures or full body postures directly in front of their camera.
+                Aropas (Active Rock-Paper-Scissors) is a traditional game reinvented with a dynamic, physical twist. Instead of just using your fingers, you play this version also with your entire body. By striking different full-body postures to represent rock, paper, or scissors, you actively stretch and strain the muscles and joints in your arms, legs, and torso, while your hand movements help relax your fingers and wrists.
             </p>
             <p>
-                <a href="https://github.com/shaofengchang25-blip/rps.play" target="_blank" class="web-link">
-                    &rarr; Visit Project Repository / Web Link
-                </a>
+                This makes Aropas the perfect way to break up long hours of sitting in a fixed position, whether you’ve been working at a computer or staring at a phone. To play, simply set your phone down and perform gestures over the screen, or prop your phone up vertically, step back into the camera’s field of view, and strike your poses against the AI. Winning or losing doesn’t matter—the real victory is getting your body moving, stretching, and taking a well-deserved break from your screen.
             </p>
-            <div class="media-container">
-                <img src="images/aropas-overview.png" alt="Aropas Overview Picture">
-                <a href="images/aropas-overview.png" target="_blank" class="local-pic-link">
-                    &#128065; Local Image Link: <code>images/aropas-overview.png</code>
-                </a>
+            <p>
+                Body Rock-Paper-Scissors is played just like the universally popular hand-based version. Numerous examples reflecting its real-world popularity can be found across the web. For instance, <a href="https://www.fhsmp.de/hochschule-profil/unser-team/prof-dr-christian-andrae-2/" target="_blank">Prof. Dr. Christian Andrä</a>, an expert in the field of Movement and Sports Pedagogy, has demonstrated a version of <a href="https://www.youtube.com/shorts/SBpPGiYZ1q8?feature=share" target="_blank">body Rock-Paper-Scissors</a> alongside his students on his YouTube channel, highlighting its health and fitness benefits for both the young and the old.
+            </p>
+
+            <!-- 4 Parallel Images Grid -->
+            <p style="font-size:0.9em; color:#666; margin-bottom:8px;">
+                The postures for rock, paper, scissors are found from <a href="https://www.youtube.com/shorts/SBpPGiYZ1q8?feature=share" target="_blank">YouTube Demonstration</a> as following:
+            </p>
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/ProfStu_rock.png" alt="Body rock posture">
+                    <span class="local-pic-link">Body rock posture</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/ProfStu_paper.png" alt="Body paper posture">
+                    <span class="local-pic-link">Body paper posture</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/ProfStu_scissors.png" alt="Body scissor posture">
+                    <span class="local-pic-link">Body scissor posture</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/ProfStu_together.png" alt="Play with partner">
+                    <span class="local-pic-link">Play with partner</span>
+                </div>
             </div>
+
+            <p>
+                Traditionally, hand / body Rock-Paper-Scissors require a partner standing directly in front of you. To overcome this limitation, Aropas leverages modern technology, specifically your smartphone and Artificial Intelligence (AI). Your phone acts as an interactive opponent by using its camera to recognize your live gestures and body postures, allowing you to enjoy the full win, loss, or draw experience entirely on your own.
+            </p>
+            <p>
+                Moreover, modern work and leisure routines often leave us in static postures in front of screens for extended periods, frequently leading to physical discomfort and long-term health issues. Aropas offers the ideal active break from sedentary screen time to help you rebalance your daily routine. By stepping away from your device for just a moment, you can actively stretch, move, and fully relieve tension across your muscles, joints, and body.
+            </p>
+
         </section>
 
         <!-- Section 2 -->
         <section class="intro-section">
-            <h2>2. Active Hand Gesture Recognition</h2>
+            <h2>2. Features of Aropas </h2>
             <p>
-                Using on-device machine learning, Aropas recognizes hand gestures in real-time without latency. The AI analyzes finger positions to accurately match Rock, Paper, or Scissors inputs without sending any video data to cloud servers.
+                The game features four main tabs—Auto Play, Active Play, Active Body Play, and General Settings—which you can easily navigate using the arrow indicators in the top bar:
             </p>
             <p>
-                <a href="https://aropas-play.github.io/rps.play" target="_blank" class="web-link">
-                    &rarr; Learn More about AI Gesture Detection
-                </a>
+                • Auto Play: Watch two AI players battle it out directly on your phone. Depending on your preference, you can choose Full Auto or Half Auto mode with a single click or multiple clicks of the play button.
             </p>
-            <div class="media-container">
-                <img src="images/gesture-recognition.png" alt="Hand Gesture Recognition Picture">
-                <a href="images/gesture-recognition.png" target="_blank" class="local-pic-link">
-                    &#128065; Local Image Link: <code>images/gesture-recognition.png</code>
-                </a>
+
+            <!-- Auto Play 4 Parallel Screenshots -->
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay1.jpg" alt="A play after button 'Play' clicked">
+                    <span class="local-pic-link">A play after button 'Play' clicked, yellow indicates 'Draw' for this play, this the 1st play(R1)</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay2.jpg" alt="A play after button 'Play' clicked">
+                    <span class="local-pic-link">A play after button 'Play' clicked, red / green indicates 'lost'/'win' for the 2nd play (R2)</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay3.jpg" alt="Result of this round">
+                    <span class="local-pic-link">Result of this round, yellow indicates draw for this round as whole with text overlapped</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-autoplay4.jpg" alt="view after 'check' clicked">
+                    <span class="local-pic-link">view after 'check' clicked, here is the 3rd play (R3), the R1, R2 also recored, click left/right arrow to browser</span>
+                </div>
             </div>
+
+            <p>
+                • Active Play: Face off against your phone! In this mode, your phone is Player 1 and you are Player 2. Depending on the selected mode, you can either tap the gesture icons on the screen or show your real hand gestures directly to the open camera.
+            </p>
+
+            <!-- Active Play 5 Parallel Screenshots -->
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay1.png" alt="Active Play Screenshot 1">
+                    <span class="local-pic-link">Click button play, or Make ok sign, 1 visible and heard, start a play for a round, do for each play of this round</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay2.png" alt="Active Play Screenshot 2">
+                    <span class="local-pic-link">The 1st play of this round, after ok sign recognized</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay3.png" alt="Active Play Screenshot 3">
+                    <span class="local-pic-link">The 2nd play of this round, after ok sign recognized</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay4.png" alt="Active Play Screenshot 4">
+                    <span class="local-pic-link">The 3rd play of this round, after ok sign recognized</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app_activeplay5.png" alt="Active Play Screenshot 5">
+                    <span class="local-pic-link">Congratulation! You've won</span>
+                </div>
+            </div>
+
+            <p>
+                • Active Body Play: It’s you vs. your phone in a full-body challenge. Choose whether to play by tapping the posture icons or by stepping back to strike real physical poses in front of your phone's camera.
+            </p>
+
+            <!-- Active Body Play 5 Parallel Screenshots -->
+            <div class="image-grid">
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody1.png" alt="Active Body Play Screenshot 1">
+                    <span class="local-pic-link">Click button play, or Put a hand over head, 1 visible and heard, to start a play, do for each play in a round of 3 plays</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody2.png" alt="Active Body Play Screenshot 2">
+                    <span class="local-pic-link">The 1st play of this round, after one hand overhead recognized</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody3.png" alt="Active Body Play Screenshot 3">
+                    <span class="local-pic-link">The 2nd play of this round, after one hand overhead recognized</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody4.png" alt="Active Body Play Screenshot 4">
+                    <span class="local-pic-link">The 3rd play of this round, after one hand overhead recognized</span>
+                </div>
+                <div class="media-card">
+                    <img src="images/app_ss/app-activebody5.png" alt="Active Body Play Screenshot 5">
+                    <span class="local-pic-link">Congratulation! You've won</span>
+                </div>
+            </div>
+
+            <p>
+                Tailor your workout: The physical intensity of these three modes scales from light to heavy—ranging from a simple button click to full-body movement. You decide exactly how much you want to move!
+            </p>
+            <p>
+                • General Settings: In this final section, you can fully customize your experience. Set player names, choose profile photos, select countdown voices, pick your favorite victory music, and change the app language to your liking.
+            </p>
+
         </section>
 
         <!-- Section 3 -->
         <section class="intro-section">
-            <h2>3. Body Posture Gameplay</h2>
+            <h2>3. Body Postures possible</h2>
             <p>
-                Take the active gaming experience to full-body movement! Aropas supports full-body posture tracking where movements map into game actions, encouraging physical activity and engaging interactive play.
+                Take the active gaming experience to full-body movement! Aropas supports full-body posture tracking where movements map into game actions, encouraging physical activity and engaging interactive play. Below are examples of body postures categorized by move that were recognized during offline tests so far:
             </p>
-            <p>
-                <a href="privacy.html" target="_blank" class="web-link">
-                    &rarr; Read about On-Device Privacy & Security
-                </a>
-            </p>
-            <div class="media-container">
-                <img src="images/body-posture.png" alt="Body Posture Gameplay Picture">
-                <a href="images/body-posture.png" target="_blank" class="local-pic-link">
-                    &#128065; Local Image Link: <code>images/body-posture.png</code>
-                </a>
+
+            <!-- Category 1: paper -->
+            <div class="category-block">
+                <h3>Category: Paper</h3>
+                <p class="category-comment">This is a relaxed posture, stand and away from phones or workplace</p>
+                <div class="image-grid-5">
+                    <div class="media-card">
+                        <img src="images/postexamples/bodygraphs/pl_bodypaper.png" alt="paper pattern">
+                        <span class="local-pic-link">paper pattern</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/papers/test_pose_g.jpg" alt="paper posture 1">
+                        <span class="local-pic-link">paper posture 1</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/papers/test_pose_h.jpg" alt="paper posture 2">
+                        <span class="local-pic-link">paper posture 2</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/papers/test_pose_i.jpg" alt="paper posture 3">
+                        <span class="local-pic-link">paper posture 3</span>
+                    </div>
+                </div>
             </div>
+
+            <!-- Category 2: scissors -->
+            <div class="category-block">
+                <h3>Category: Scissors</h3>
+                <p class="category-comment">They are not surrendering, but stretching, if lifting the heels and standing on the tiptoes, better effects for health will be reached, according to TCM</p>
+                <div class="image-grid-5">
+                    <div class="media-card">
+                        <img src="images/postexamples/bodygraphs/pl_bodyscissor.png" alt="scissors pattern">
+                        <span class="local-pic-link">scissors pattern</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_j.jpg" alt="scissors posture 1">
+                        <span class="local-pic-link">scissors posture 1</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_11.jpg" alt="scissors posture 2">
+                        <span class="local-pic-link">scissors posture 2</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_12.jpg" alt="scissors posture 3">
+                        <span class="local-pic-link">scissors posture 3</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_13.jpg" alt="scissors posture 4">
+                        <span class="local-pic-link">scissors posture 4</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/scissors/test_pose_14.jpg" alt="scissors posture 5">
+                        <span class="local-pic-link">scissors posture 5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: rock -->
+            <div class="category-block">
+                <h3>Category: Rock</h3>
+                <p class="category-comment">Here the pattern is an easy crouch, some other crouch postures collected and shown here below, you can choose what you will and could, remember to finish in 2 seconds after 1 visible and count down spoken, keep balance and prepare for the next one. if you choose the difficult like the last row or esp. the last one, it is definitely a challenge for you and AI recognition algorithm as well!</p>
+                <div class="image-grid-5">
+                    <div class="media-card">
+                        <img src="images/postexamples/bodygraphs/pl_bodyrock.png" alt="rock pattern">
+                        <span class="local-pic-link">rock pattern</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_5.jpg" alt="rock posture 1 upper">
+                        <img src="images/postexamples/rock/test_pose_b.jpg" alt="rock posture 2 lower" style="margin-top: 4px;">
+                        <span class="local-pic-link">rock posture 1, 2</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_9.jpg" alt="rock posture 3">
+                        <span class="local-pic-link">rock posture 3</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_a.jpg" alt="rock posture 4">
+                        <span class="local-pic-link">rock posture 4</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_6.jpg" alt="rock posture 5">
+                        <span class="local-pic-link">rock posture 5</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_16.jpg" alt="rock posture 6">
+                        <span class="local-pic-link">rock posture 6</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_17.jpg" alt="rock posture 7">
+                        <span class="local-pic-link">rock posture 7</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_18.jpg" alt="rock posture 8">
+                        <span class="local-pic-link">rock posture 8</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_41.jpg" alt="rock posture 9">
+                        <span class="local-pic-link">rock posture 9</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_15.jpg" alt="rock posture 10">
+                        <span class="local-pic-link">rock posture 10</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_c.jpg" alt="rock posture 11">
+                        <span class="local-pic-link">rock posture 11</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_d.jpg" alt="rock posture 12">
+                        <span class="local-pic-link">rock posture 12</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_e.jpg" alt="rock posture 13">
+                        <span class="local-pic-link">rock posture 13</span>
+                    </div>
+                    <div class="media-card">
+                        <img src="images/postexamples/rock/test_pose_f.jpg" alt="rock posture 14">
+                        <span class="local-pic-link">rock posture 14</span>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
 
         <!-- Section 4 (Template for New Paragraph Content) -->
@@ -194,13 +517,14 @@
 
     </main>
 
+    <!-- Bottom Back to Home Button aligned to Right -->
     <div class="nav-back">
-        <a href="index.html" class="btn">&larr; Back to Home</a>
+        <a href="index.html" class="btn">Back to Home &rarr;</a>
     </div>
 
     <div class="footer">
         <p>Developer: Shaofeng Chang</p>
-        <p>&copy; 2026 act.joy.rps</p>
+        <p>&copy; 2026 Aropas (act.joy.rps) <img src="images/app_icon.png" alt="App Icon" style="height: 1.2em; width: auto; vertical-align: middle; margin-left: 4px;"></p>
     </div>
 
 </body>

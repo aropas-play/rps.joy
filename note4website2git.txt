@@ -73,3 +73,79 @@ Q:
 2. put a link to (Aropas) so that it is clickable jump to a new page aropas-intro.html
 3. in that page, make a title and many paragrphes, each paragraph put a web link and picture local link, pictures are under subfolder of this folder
 4. create a pattern, in which contents will be filled
+
+Q: for aropas-intro.html
+1. link citation Prof. Dr. Christian Andrä, and  body Rock-Paper-Scissors, characters made the same as the other text fonts
+2. Local Image Link in section 1 made four image parallel together
+
+Q:
+1. put images under images/app_ss/app-autoplay1.jpg to app-autoplay4.jpg for auto play before point active play, as format body rock posture sequence images in a row
+2. put images under images/app_ss/app-activeplay1 to 5 for active play before point active body play, as format body rock posture sequence images in a row
+3. put images under images/app_ss/app-activebody1 to 5 for active body play before "Tailor your workout ...", as format body rock posture sequence images in a row
+
+4.1 add a back to home button at the above and right of "introduction" to the page right side;
+4.2 move back to home button at the middle end of page to right side, the same column as the front backtohome button;
+4.3 change section 3 "Body Posture Gameplay" as "Body Posture possible"
+4.4 put images categories under images/postexamples  in three categories with folder name, leave text of "to be commented" for comments of categories
+4.5 in each category, as format body rock posture sequence images in a row, each row 5 images with a suitable reduced/maginified scaling size
+    if more than 5 put to next row, the last row with less than 5, also take the size scaling of last row, so as columnwise consistent; if less than 5, put them a row
+
+5. remove  "→Learn More about AI Gesture Detection" and link
+6. remove "→ Read about On-Device Privacy & Security"
+
+7. put category rock under scissors
+
+8. put images under images/postexamples/bodygraphs to the first of each category by their name defined category, adjust the size to make row / column arrangement as before, under each graph titled with their names
+
+9. for posture images, remove links to originals, titled the first graph as paper pattern, scissors pattern, rock pattern, the others after titled sequentially paper posture 1, 2 till the maximal count
+
+10. to be commented for paper replaced: this is relaxed posture, stand and away from your phone or workplace
+    to be commented for scissors replaced: you are not surrendering, but stretching perhaps hover up your heel to read better effect
+    to be commented for rock replaced: here you choose what you could, the pattern is only an easy crouch, you can choose what you will and could, if you choose the difficult like posture 9, it is definitely a challenge for you and AI recognition algorithm as well!
+
+18.10.26
+1.1 images "Body rock posture" row: remove all links to original, titled with link name like "Body rock posture" etc.
+1.2 images this row add a common untitle "From <a href="https://www.youtube.com/shorts/SBpPGiYZ1q8?feature=share" target="_blank">"
+1.3 images "Auto play 1" etc. row: remove all links to original, titled "Auto play 1" and "Auto play 2" with "A play after button 'Play' clicked"
+    titled "Auto play 3" as "Result of this round", "Auto play 4" as "view after 'check' clicked"
+1.4 images "Active play 1" etc. row: remove all links to original,
+        titled "Active play 1" as "Make ok sign to start play a round, do for each round of 3"
+        titled "Active play 2" as "The 1st play of this round, after ok sign recognized"
+        titled "Active play 3" as "The 2nd play of this round, after ok sign recognized"
+        titled "Active play 4" as "The 3rd play of this round, after ok sign recognized"
+        titled "Active play 5" as "Congratulation! you've won"
+1.5 images "Active body 1" etc. row: remove all links to original,
+        titled "Active Body 1" as "Put a hand over head, 1 visible and heard, to start a play, do for each play in a round of 3 plays"
+        titled "Active play 2" as "The 1st play of this round, after one hand overhead recognized"
+        titled "Active play 3" as "The 2nd play of this round, after one hand overhead recognized"
+        titled "Active play 4" as "The 3rd play of this round, after one hand overhead recognized"
+        titled "Active play 5" as "Congratulation! won"
+1.6 put rock posture 1 and 5 together to 5's position, one above one below, put in a cell of grid of rock posture all
+    rearrange the sequential name between them, the rest sequentially after.
+
+2.1 text + link "From YouTube Demonstration" changed as "The postures for rock, paper, scissors are found from YouTube Demonstration as following:", link still to that part of texts
+2.2 image row "A play after button 'Play' clicked"
+    after "A play after button 'Play' clicked", add ", yellow indicates 'Draw' for this play, this the 1st play(R1)"
+    after next image "A play after button 'Play' clicked", add ", red / green indicates 'lost'/'win' for the 2nd play (R2)"
+    after next image "Result of this round", add ", yellow indicates draw for this round as whole with text overlapped"
+    the last image in row "view after 'check' clicked", after it ", here is the 3rd play (R3), the R1, R2 also recored, click left/right arrow to browser"
+2.3 image row "Make ok sign to start play a round, do for each round of 3", change this as "Make ok sign to start a play for a round, do for each play of this round"
+
+3.1 in category:rock, in the grid of images, position rock 4 has two, change "rock posture 4" as "rock posture 4, 5", the rest numembered sequentially
+3.2 current last row exchange with their above row, so the 4 last row to 4 its above, renumber them consequentially
+
+4.1 insert rock posture 14 between rock posture 9 an 10, i.e. put it above in rock posture 10' positon of above row, and renumber them
+
+5.1. cell of rock posture 4,5 exchange with rock posture 1, named rock posture 1,2, renumber others consequentially
+6.1. for both pages of home and intro, © 2026 act.joy.rps changed as © 2026 Aropas (act.joy.rps) images/app_icon.png, this image scaled in proportionally to the font size in this text line
+
+7.1 create aropas-intro-zh.html and aropas-intro-de.html file, translate aropas-intro.html to them
+7.2 at top right corner of pages, put language switch with country flag with proportionally smaller size of 3 charactoers, by pressing the page swithing to corresponding languege.
+
+8.1 make home and privacy trilingual and switchable as intro done
+
+9.1 in page "Privacy Policy", before "Last Updated: November 12, 2026" line, right side of page, put a back to home button as the end of page, trilingual
+
+git add .
+git commit -m "Feats: added aropas-intro.html 1. aropas-intro.html created for app details 2. trilingual version en / de /zh for intro, home, privacy page"
+git push

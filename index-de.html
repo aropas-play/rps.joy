@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPSgame - Schere Stein Papier KI</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
+        header { padding: 40px 20px; background: #f4f4f9; border-radius: 10px; margin-bottom: 30px; }
+        h1 { color: #1976D2; margin: 0; }
+        a { color: #1976D2; text-decoration: underline; }
+        a:hover { color: #1565C0; }
+        .top-nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 10px 0 20px 0;
+        }
+        .lang-switch {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .lang-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            font-size: 0.85em;
+            color: #555;
+            background: #f0f0f0;
+            border-radius: 4px;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: #1976D2;
+            color: #fff;
+            border-color: #1976D2;
+            text-decoration: none;
+        }
+        .btn { display: inline-block; padding: 12px 24px; background: #1976D2; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px; }
+        .btn:hover { background: #1565C0; color: white; text-decoration: none; }
+        .footer { margin-top: 50px; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <!-- Sprachauswahl-Leiste oben -->
+    <div class="top-nav">
+        <div class="lang-switch">
+            <a href="index.html" class="lang-btn" title="English">🇬🇧 EN</a>
+            <a href="index-zh.html" class="lang-btn" title="中文">🇨🇳 中文</a>
+            <a href="index-de.html" class="lang-btn active" title="Deutsch">🇩🇪 DE</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Aropas</h1>
+        <p>Ein modernes aktives Schere-Stein-Papier-Spiel (<a href="aropas-intro-de.html">Aropas Einführung</a>), angetrieben durch lokale KI auf dem Gerät.</p>
+    </header>
+
+    <section>
+        <h2>Funktionen</h2>
+        <p>Auto Play, Active Hand Gesture Play und Active Body Posture Play.</p>
+        <p>Einsatz von Technologien der Künstlichen Intelligenz (KI) für Echtzeiterkennung auf dem Gerät.</p>
+    </section>
+
+    <div style="margin: 40px 0;">
+        <a href="privacy-de.html" class="btn">Datenschutzerklärung</a>
+    </div>
+
+    <div class="footer">
+        <p>Entwickler: Shaofeng Chang</p>
+        <p>&copy; 2026 Aropas (act.joy.rps) <img src="images/app_icon.png" alt="App Icon" style="height: 1.2em; width: auto; vertical-align: middle; margin-left: 4px;"></p>
+    </div>
+</body>
+</html>
