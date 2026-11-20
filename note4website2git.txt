@@ -149,3 +149,104 @@ Q:
 git add .
 git commit -m "Feats: added aropas-intro.html 1. aropas-intro.html created for app details 2. trilingual version en / de /zh for intro, home, privacy page"
 git push
+
+20.11.26
+file:///Users/zhyu/AndroidStudioProjects/RPSgameWeb/index.html
+1. in the middle of three current pages, put a button "get a free play"
+2. it links to pop up windows, in which a text field to be filled titled "fill you email and left its link in play store be sent to you"
+3. then in mail put two links:
+https://play.google.com/store/apps/details?id=act.joy.rps, https://play.google.com/apps/testing/act.joy.rps
+4. and express thanks, inform the mails could be put in close test email list, no disturb, no spams to sent any more, if don't agree, send mail back to deny; if problems are found, also welcome to inform by mail
+5. give the email adr same as in privacy page
+6. below text field follow text: 1st line: No account needed, no data sent out, 2nd line: a play within 10 seconds, play time can also be configured!
+7. the last in the pop up windows are two buttons close and send, send check if effect mail there with @ character, if yes when press and close window
+   the close button close windows always.
+2.1 in the link from https://play.google.com/store/apps/details?id=act.joy.rps&hl=en-US&ah=Y4muNObUts-jCr9_ZqqhPQIZc8E
+    the button "install on more device" call up a pop up windows, in which under combibox, it states: the app access to location, phone status, microphone, Wi-Fi connection information, and others,
+    which are more than I declared, why?
+
+    The extra permissions shown on Google Play (like Location, Phone Status, Microphone, and Wi-Fi connection info) are caused by Manifest Merging from Third-Party Libraries.
+    1. Why Are Extra Permissions Included?
+    When you build your Android App (.aab or .apk), Gradle uses the Manifest Merger tool. It combines your main AndroidManifest.xml with the hidden AndroidManifest.xml files inside every 3rd-party library/SDK in your project:
+    •    Google AdMob & Huawei Petal Ads: These ad networks automatically include permissions to optimize ad delivery and fraud detection:
+    ◦    Location (ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION): For location-targeted ads.
+    ◦    Phone Status (READ_PHONE_STATE): For device identification on older Android versions.
+    ◦    Wi-Fi Information (ACCESS_WIFI_STATE): To check network connection type.
+    •    Camera / AI / ML SDKs (e.g., CameraX, ML Kit, MediaPipe): Certain camera or audio/video processing libraries include RECORD_AUDIO (Microphone) by default for video recording features.
+    2. How to Inspect Which Library Added Each Permission
+    You can check exactly which library added each permission inside Android Studio:
+    2.1.    Open AndroidManifest.xml in Android Studio.
+    2.2.    Click the Merged Manifest tab at the bottom of the code editor window.
+    2.3.    Look through the merged permissions list. On the right panel, Android Studio will show the exact library (e.g., com.google.android.gms:play-services-ads) that declared each permission.
+    3. How to Block/Remove Unwanted Permissions
+    If a 3rd-party SDK merged permissions that your app does not actually need, you can explicitly block and remove them in your main AndroidManifest.xml using tools:node="remove":
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+        <!-- Explicitly remove permissions merged from third-party SDKs -->
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" tools:node="remove" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" tools:node="remove" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" tools:node="remove" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" tools:node="remove" />
+    </manifest>
+    4. Next Steps
+    4.1.    Add tools:node="remove" for any permissions you do not want in your app.
+    4.2.    Build a new App Bundle (.aab) and upload it to Google Play Console.
+    4.3.    Update the Data Safety questionnaire in Google Play Console to match your updated permissions.
+Q 2.2. 1. if they are removed, the SDK still work for the function of this app
+     2. if upload aab again, the view process of app will be postpone, some have to start again
+A:
+    Here are the direct answers to your two questions:
+1. Will the SDKs and app still work if those permissions are removed?
+    YES, your app and ad SDKs will still work perfectly.
+    •Google AdMob & Huawei Petal Ads:
+        ◦Location (ACCESS_FINE_LOCATION/COARSE_LOCATION), Phone State (READ_PHONE_STATE), and Wi-Fi State (ACCESS_WIFI_STATE) are optional permissions for ad networks.
+        ◦If removed, AdMob and Petal Ads will simply serve contextual/non-targeted ads. The ads will still display normally and earn revenue without crashing.
+    •CameraX / ML Kit / MediaPipe:
+        ◦For real-time hand gesture and body posture recognition, only <uses-permission android:name="android.permission.CAMERA" /> is required.
+        ◦Microphone (RECORD_AUDIO) is only needed if recording video with sound, which Aropas does not require.
+    Summary: Removing these permissions using tools:node="remove" will NOT break gesture recognition, posture tracking, or ad display.
+2. If I upload a new .aab, will the review process be postponed or reset?
+    •Your Current Live App Remains Available: While the new .aab update is being reviewed by Google Play, your current version of the app stays live on the Play Store for users to download.
+    •Standard Update Review Time: A new .aab submission goes through a routine update review (typically taking 1 to 3 days). It does NOT restart your entire account setup.
+    •For Closed Testing (14-Day Testing Rule for Personal Accounts):
+        ◦Uploading a new .aab build to the same Closed Testing track does NOT reset the 14-day testing countdown.
+        ◦The 14-day consecutive testing progress continues without interruption while testers test the updated build.
+    Recommendation
+    1.You can safely add tools:node="remove" to strip out unused permissions (LOCATION, READ_PHONE_STATE, RECORD_AUDIO, ACCESS_WIFI_STATE).
+    2.Build a new .aab and push it as a minor update to your testing or production track whenever you are ready.
+
+3.1 the textfield acts as a mailsending function from aropas.play@gmail.com, as soos as an effect mail filled and send button clicked, a mail is sent to that adr.
+3.2 with content:
+Thank you for your interest! here are the app links:
+Google Play Store Link
+Google Play Closed Testing Link
+Thank you for playing Aropas! Your email may be included in our closed testing list. No disturbance and no spam will ever be sent. If you do not agree, simply reply to the email to opt out. If any problems are found, you are welcome to inform us by email at aropas.play@gmail.com.
+3.3 leave in pop up windows only "Thank you for your interest! "
+
+4.1 can that mail be sent to the given adr in background, not call up another mail tool?
+A:
+Yes, absolutely! However, client-side JavaScript running on a static website (like GitHub Pages) cannot send emails directly to an SMTP server on its own. mailto: is the browser's default behavior, which opens the user's email client.
+To send the email silently in the background without opening another mail tool, you need a free background email API service designed for static websites.
+The 2 Best Free Options for GitHub Pages
+Option 1: EmailJS (Recommended – Pure JavaScript Background Sending)
+EmailJS lets you send emails directly from your JavaScript code in the background using emailjs.send().
+•Free Tier: 200 emails / month (perfect for closed testing).
+•How it works:
+i. You create a free account on EmailJS and connect your Gmail (aropas.play@gmail.com).
+ii. Include the EmailJS SDK script tag in your HTML.
+iii. Replace window.location.href = "mailto:..." with emailjs.send(...).
+Example JavaScript Code:
+Option 2: Formspree or Web3Forms (No JavaScript SDK needed)
+Web3Forms or Formspree provides an API endpoint for HTML forms.
+1.  You change <form action="https://api.web3forms.com/submit" method="POST">.
+2.  When the user clicks Send, your page sends a background fetch() request to the API without leaving or opening a mail app.
+Comparison Summary
+Method  Opens Mail App? Requires Backend/Service?   Setup Time
+mailto: (Current)   Yes (Opens Mail App)    None (Pure Static HTML) 0 minutes
+EmailJS (Background)    No (Sends silently in BG)   Free EmailJS Account    ~5 minutes
+Web3Forms (Background)  No (Sends silently in BG)   Free Access Key     ~3 minutes
+
+5.1 ok keep current version. in home page put "get a free app" button above "Features" and under short intro line;
+5.2 in aropas-intro page move this button betweel language switcher and goback to home button under Aropas title;
+5.3 in privacy page move this button to the line of privacy police, to right of it under goback home button

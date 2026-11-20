@@ -1,0 +1,122 @@
+
+------------------Original
+Sehr geehrter Prof. Dr. Christian Andrä,
+
+auf Youtube Channel habe ich die Videos über Ihre @Bewegte-Schule gesehen, eine davon finde ich sehr interessant, das ist die Video über Full-Body Schere Stein Papier - mit Glück, Geschick und Körpereinsatz (https://www.youtube.com/shorts/SBpPGiYZ1q8?feature=share). Inseriert davon habe ich eine App gebastelt, möchte ich in Google App Store präsentieren und veröffentlichen. Zur Vorbereitung habe ich in App-Information Ihrer @Bewegte-Schule und der Video zitiert. 
+
+Außerdem habe ich eine Webseite über die Privacy Policy exponiert, daneben auch die App eine Vorstellung erstellt, darin habe ich Ihrer @Bewegte-Schule und der Video gelinkt. Danach um diese drei Posture zu erleuchten, habe ich aus Ihr Video vier Frame genommen, darin das Mädchen für diese drei Zeichen posiert, and eine Ihr beide spielet gerade. Hier ist die Linke davon, scheuen Sie mal, sagen Sie auch das Mädchen, und mir Bescheid geben, ob das geeigneten ist.
+
+Die Webseite habe ich ersten heute fertiggemacht und als TestVersion upgeloadet. Wenn Sie und das Mädchen mit der Linke und die Bilder einverstanden sind, dann lasse ich so präsentieren, ansonstenss nehme ich werde die aus.
+
+Die App habe ich in Google play store hochgeladen, steht jetzt in Alpha-Test, ich kriege aber die Linke dafür, die ich verteilen darf. Wenn Sie Interesse haben, teile ich Ihnen mit.
+
+
+Mit freundlichen Grüßen
+Xiaofeng Zhang
+------------------Formuliert von Google
+Hier ist eine höfliche, professionelle und gut strukturierte Formulierung für deine Nachricht an den Kanal @Bewegte-Schule:
+
+Betreff: Inspiration durch Ihr Video „Full-Body Schere Stein Papier“ – Anfrage zur Bildnutzung für meine neue App
+
+Sehr geehrter Prof. Dr. Christian Andrä,
+
+
+auf Ihrem YouTube-Kanal habe ich Ihr tolles Video „Full-Body Schere Stein Papier – mit Glück, Geschick und Körpereinsatz“ (https://www.youtube.com/shorts/SBpPGiYZ1q8?feature=share) entdeckt. Die Idee hat mich so begeistert, dass ich in einer App integriert habe, die ich demnächst im Google Play Store veröffentlichen möchte.
+
+Zur Vorbereitung habe ich Ihren Kanal (@Bewegte-Schule) sowie das Originalvideo sowohl in der App-Beschreibung als auch auf der dazugehörigen Webseite (inklusive Datenschutzerklärung) als Inspiration verlinkt und zitiert.
+
+Um die drei Körperhaltungen (Schere, Stein, Papier) auf der Webseite anschaulich zu erklären, habe ich vier Screenshots (Frames) aus Ihrem Video eingefügt – drei zeigen die einzelnen Posen, eines zeigt euch beide gemeinsam im Spiel. Die drei, die mit fronte Gesicht habe ich maskiert, und eine seitliche Bild nicht.
+
+Hier ist der Link zur aktuellen Testversion der Webseite, damit Sie sich selbst ein Bild machen können:
+[HIER DEINEN LINK ZUR WEBSEITE EINFÜGEN]
+Könnten Sie und die gezeigte Spielerin bitte kurz darüber schauen und mir Bescheid geben, ob Sie mit der Verlinkung und der Verwendung dieser Bilder einverstanden sind? Falls nicht, nehme ich die Bilder selbstverständlich sofort wieder heraus.
+
+Die App befindet sich im Google Play Store aktuell noch im geschlossenen Alpha-Test. Sobald ich den Freigabe-Link habe, schicke ich ihn Ihnen bei Interesse sehr gerne zum Ausprobieren zu!
+Vielen Dank vorab für Ihre Rückmeldung und viele Grüße
+[DEIN NAME]
+
+Tipps vor dem Absenden:
+
+• Platzhalter ersetzen: Vergiss nicht, oben den Link zu deiner Test-Webseite und am Ende deinen Namen einzutragen.
+• Rechtlicher Hinweis: Da auf den Bildern Personen erkennbar sind (Recht am eigenen Bild) und die Screenshots aus einem geschützten Video stammen (Urheberrecht), ist es genau richtig und sehr fair, vor der Veröffentlichung explizit nach der Erlaubnis zu fragen. Warte am besten auf das schriftliche „Okay“, bevor du die Seite offiziell bewirbst.
+Möchtest du noch eine kürzere Version für einen YouTube-Kommentar oder soll ich dir eine englische Übersetzung des Textes erstellen?
+
+Weil die body schere-stein-papier ist ein teil von app, habe geändert: Die Idee hat mich so begeistert, dass ich in einer App integriert habe.
+Noch dazu: Die drei, die mit fronte Gesicht habe ich maskiert, und eine seitliche Bild nicht.
+------------------
+Hier ist die aktualisierte Fassung deiner Nachricht, in der du nun auch direkt und höflich anbietest, sie bei Interesse als freiwillige Tester in den Alpha-Test aufzunehmen:
+Betreff: Inspiration durch Ihr Video „Full-Body Schere Stein Papier“ – Anfrage zur Bildnutzung & App-Test
+
+Sehr geehrter Prof. Dr. Christian Andrä,
+
+auf Ihrem YouTube-Kanal habe ich Ihr tolles Video „Full-Body Schere Stein Papier – mit Glück, Geschick und Körpereinsatz“ (youtube.com) entdeckt. Die Idee hat mich so begeistert, dass ich das Spiel als Funktion in meine eigene App integriert habe, die ich demnächst im Google Play Store veröffentlichen möchte.
+
+Zur Vorbereitung habe ich Ihren Kanal (@Bewegte-Schule) sowie das Originalvideo sowohl in der App-Beschreibung als auch auf der dazugehörigen Webseite (inklusive Datenschutzerklärung) als Inspiration verlinkt und zitiert.
+
+Um die drei Körperhaltungen (Schere, Stein, Papier) auf der Webseite anschaulich zu erklären, habe ich vier Screenshots (Frames) aus Ihrem Video eingefügt. Drei der Bilder zeigen die einzelnen Posen von vorne – hier habe ich die Gesichter zum Schutz der Privatsphäre bereits unkenntlich gemacht (maskiert). Das vierte Bild zeigt euch beide gemeinsam im Spiel aus einer seitlichen Perspektive, weshalb ich es vorerst unmaskiert gelassen habe. Falls gewünscht, kann ich aber selbstverständlich auch dieses Bild noch maskieren.
+
+Hier ist der Link zur aktuellen Testversion der Webseite, damit Sie sich selbst ein Bild machen können:
+https://aropas-play.github.io/rps.joy/aropas-intro.html
+Könnten Sie und die gezeigte Spielerin bitte kurz darüber schauen und mir Bescheid geben, ob Sie mit der Verlinkung und der Verwendung dieser Bilder in dieser Form einverstanden sind? Falls nicht, nehme ich die Bilder selbstverständlich sofort wieder heraus.
+
+Außerdem befindet sich die App im Google Play Store aktuell in der geschlossenen Testphase und ich suche gerade noch freiwillige Tester. Falls Sie oder Ihre Spielparterin Lust und Interesse haben, die App vorab auszuprobieren, schicke ich euch sehr gerne den Zugangs-Link zum Test zu – das würde mich riesig freuen!
+
+Vielen Dank vorab für Ihre Rückmeldung und viele Grüße
+
+Xiaofeng Zhang
+
+Kleiner Tipp für den Google Play Store Test:
+
+• E-Mail-Adresse abfragen: Bei Google Play geschlossenen Tests (Closed Testing) musst du die Google-Mail-Adresse der Tester oft vorab in deiner Google Play Console in eine Liste eintragen, bevor der Einladungslink für sie funktioniert. Falls das bei dir so eingestellt ist, kannst du nach „Zugangs-Link zum Test zu“ noch kurz ergänzen: „(Dafür bräuchte ich nur kurz die entsprechende Google-Mail-Adresse für die Freischaltung.)“
+
+------------------
+Hier ist die aktualisierte Fassung deiner Nachricht, in der nun auch klar erwähnt wird, dass der Test zunächst für Android-Geräte stattfindet:
+
+Betreff: Inspiration durch Ihr Video „Full-Body Schere Stein Papier“ – Anfrage zur Bildnutzung & App-Test
+
+Sehr geehrter Prof. Dr. Christian Andrä,
+
+auf Ihrem YouTube-Kanal habe ich Ihr tolles Video „Full-Body Schere Stein Papier – mit Glück, Geschick und Körpereinsatz“ (youtube.com) entdeckt. Die Idee hat mich so begeistert, dass ich das Spiel als Funktion in meine eigene App integriert habe, die ich demnächst im Google Play Store veröffentlichen möchte.
+
+Zur Vorbereitung habe ich Ihren Kanal (@Bewegte-Schule) sowie das Originalvideo sowohl in der App-Beschreibung als auch auf der dazugehörigen Webseite (inklusive Datenschutzerklärung) als Inspiration verlinkt und zitiert.
+
+Um die drei Körperhaltungen (Schere, Stein, Papier) auf der Webseite anschaulich zu erklären, habe ich vier Screenshots (Frames) aus Ihrem Video eingefügt. Drei der Bilder zeigen die einzelnen Posen von vorne – hier habe ich die Gesichter zum Schutz der Privatsphäre bereits unkenntlich gemacht (maskiert). Das vierte Bild zeigt euch beide gemeinsam im Spiel aus einer seitlichen Perspektive, weshalb ich es vorerst unmaskiert gelassen habe. Falls gewünscht, kann ich aber selbstverständlich auch dieses Bild noch maskieren.
+
+Hier ist der Link zur aktuellen Testversion der Webseite, damit Sie sich selbst ein Bild machen können:
+https://aropas-play.github.io/rps.joy/aropas-intro.html
+
+Könnten Sie und Ihre Spielpartnerin bitte kurz darüber schauen und mir Bescheid geben, ob Sie mit der Verlinkung und der Verwendung dieser Bilder in dieser Form einverstanden sind? Falls nicht, nehme ich die Bilder selbstverständlich sofort wieder heraus.
+
+Außerdem befindet sich die App im Google Play Store aktuell in der geschlossenen Testphase (vorerst nur für Android-Smartphones) und ich suche gerade noch freiwillige Tester. Falls Sie oder Ihre Spielpartnerin ein Android-Handy nutzen und Lust haben, die App vorab auszuprobieren, schicke ich Ihnen sehr gerne den Zugangs-Link zum Test zu (dafür bräuchte ich nur kurz die jeweilige Google-Mail-Adresse für die Freischaltung) – das würde mich riesig freuen!
+
+Vielen Dank vorab für Ihre Rückmeldung und viele Grüße
+
+Xiaofeng Zhang
+
+Hinweis vor dem Absenden:
+
+• Platzhalter ausfüllen: Denke daran, [HIER DEINEN LINK ZUR WEBSEITE EINFÜGEN] und [DEIN NAME] durch deine echten Daten zu ersetzen.
+• Anrede vereinheitlichen: In dem Satz zum vierten Bild steht noch „zeigt euch beide“ – falls du komplett beim höflichen „Sie“ bleiben möchtest, kannst du das noch in „zeigt Sie beide“ ändern.
+
+------------------final-
+andrae@fhsmp.de
+
+Betreff: Inspiration durch Ihr Video „Full-Body Schere Stein Papier“ – Anfrage zur Bildnutzung & App-Test
+
+Sehr geehrter Prof. Dr. Christian Andrä,
+
+auf Ihrem YouTube-Kanal habe ich Ihr tolles Video „Full-Body Schere Stein Papier – mit Glück, Geschick und Körpereinsatz“ (youtube.com) entdeckt. Die Idee hat mich so begeistert, dass ich das Spiel als Funktion in meine eigene App integriert habe, die ich demnächst im Google Play Store veröffentlichen möchte.
+
+Zur Vorbereitung habe ich Ihren Kanal (@Bewegte-Schule) sowie das Originalvideo sowohl in der App-Beschreibung als auch auf der dazugehörigen Webseite (inklusive Datenschutzerklärung) als Inspiration verlinkt und zitiert.
+
+Um die drei Körperhaltungen (Schere, Stein, Papier) auf der Webseite anschaulich zu erklären, habe ich vier Screenshots (Frames) aus Ihrem Video eingefügt. Drei der Bilder zeigen die einzelnen Posen von vorne – hier habe ich die Gesichter zum Schutz der Privatsphäre bereits unkenntlich gemacht (maskiert). Das vierte Bild zeigt euch beide gemeinsam im Spiel aus einer seitlichen Perspektive, weshalb ich es vorerst unmaskiert gelassen habe. Falls gewünscht, kann ich aber selbstverständlich auch dieses Bild noch maskieren.
+
+Hier ist der Link zur aktuellen Testversion der Webseite, damit Sie sich selbst ein Bild machen können: https://aropas-play.github.io/rps.joy/aropas-intro.html
+
+Könnten Sie und Ihre Spielpartnerin bitte kurz darüber schauen und mir Bescheid geben, ob Sie mit der Verlinkung und der Verwendung dieser Bilder in dieser Form einverstanden sind? Falls nicht, nehme ich die Bilder selbstverständlich sofort wieder heraus.
+
+Außerdem befindet sich die App im Google Play Store aktuell in der geschlossenen Testphase (vorerst nur für Android-Smartphones) und ich suche gerade noch freiwillige Tester. Falls Sie oder Ihre Spielpartnerin ein Android-Handy nutzen und Lust haben, die App vorab auszuprobieren, schicke ich Ihnen sehr gerne den Zugangs-Link zum Test zu (dafür bräuchte ich nur kurz die jeweilige Google-Mail-Adresse für die Freischaltung) – das würde mich riesig freuen!
+
+Vielen Dank vorab für Ihre Rückmeldung und viele Grüße
+
+Xiaofeng Zhang
