@@ -250,3 +250,27 @@ Web3Forms (Background)  No (Sends silently in BG)   Free Access Key     ~3 minut
 5.1 ok keep current version. in home page put "get a free app" button above "Features" and under short intro line;
 5.2 in aropas-intro page move this button betweel language switcher and goback to home button under Aropas title;
 5.3 in privacy page move this button to the line of privacy police, to right of it under goback home button
+
+6.1 create a QR code, put it in folder images, so that the home page be entered by scanning to link
+6.3 put qr-code on page top left side vs. right three language symbols (put two row: top row en de, bottom row zh alignwith en)
+6.4 do last only to index.html, remove the qr at the end of page; language symbols zh and en same width; restore the other two files as they were;
+6-2 can suggest how efficient use this qr-code
+
+Here are the most effective ways to use your new QR code (  images/qrcode_homepage.png) to drive traffic and engagement:
+1. On the Desktop Website (Mobile Bridge)
+•Website Footer or Hero Section: Keep the QR code visible in the footer or sidebar on desktop views with a clear title:
+👉 "Scan with your phone to start playing Aropas instantly"
+•Why it works: Users browsing on a desktop/laptop can transition to their mobile phone in seconds without manually typing the URL.
+2. Video Demonstrations (YouTube / TikTok / Social Media)
+•Video Watermark or End Screen: Place the QR code in the corner of your gameplay demo videos (e.g., showing body posture recognition).
+•Why it works: Viewers watching on a PC or TV screen can scan the QR code right off the screen with their phone to try the app immediately.
+3.Workplace & Fitness Posters (Physical Marketing)
+  •  Coworking Spaces, Gyms & Office Breakrooms: Since Aropas promotes active breaks from desk work, print posters or flyers featuring the QR code and a catchy headline:
+  🏃 "Sitting too long? Take a 10-second active break! Scan to play Aropas."
+  •  Business Cards & Conference Slides: Add the QR code to the final slide of presentations or tech meetups.
+4. In-App Sharing & "Play with a Partner"
+  •  In-App Share Screen: Add a "Share with a Friend" button in the app that displays this QR code on screen.
+  •  Why it works: When playing 2-player mode with a friend, one player can open the QR code on their screen for the other player to scan and install on their own device.
+5. Email Signatures & Newsletters
+• Email Signature: Add a small QR code next to your developer email signature (aropas.play@gmail.com).
+• Closed Testing Invitation Mails: Include the QR code graphic in the welcome email sent to closed beta testers.
